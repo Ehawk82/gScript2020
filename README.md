@@ -1,2 +1,2 @@
 # gScript2020
-A scripting library to be better than gScript2019
+A personal scripting library to be better than gScript2019
