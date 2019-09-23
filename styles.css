@@ -1,0 +1,42 @@
+html,body {
+	background-color: slategrey;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+.page {
+	position: fixed;
+	height: -webkit-fill-available;
+	width: -webkit-fill-available;
+	background-color: grey;
+	top:120vh;
+	left:0;
+}
+.page_full {
+	position: fixed;
+	height: -webkit-fill-available;
+	width: -webkit-fill-available;
+	background-color: grey;
+	top:0;
+	left:0;
+}
+.page_left {
+	position: fixed;
+	height: -webkit-fill-available;
+	width: -webkit-fill-available;
+	background-color: grey;
+	top:0;
+	left:-120vw;
+}
+.page_right {
+	position: fixed;
+	height: -webkit-fill-available;
+	width: -webkit-fill-available;
+	background-color: grey;
+	top:0;
+	left:120vw;
+}
+.page,.page_full,.page_left,.page_right {
+	display: grid;
+	transition: 1s all;
+}
