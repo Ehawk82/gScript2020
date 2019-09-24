@@ -25,6 +25,6 @@
 <p><code>takeRight(x)</code> Remove '_right' from className <code>x = node</code></p>
 <p><code>makeFade(x)</code> Append '_fade' to className <code>x = node</code></p>
 <p><code>takeFade(x)</code> Remove '_fade' from className <code>x = node</code></p>
-
+<p><code>openFullscreen()</code> Make body fullscreen </p>
 <h1>global variables</h1>
 <p><code>ts</code> timestamp </p>
