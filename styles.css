@@ -38,5 +38,5 @@ html,body {
 }
 .page,.page_full,.page_left,.page_right {
 	display: grid;
-	transition: 1s all;
+	transition: 666ms all ease-in-out;
 }
