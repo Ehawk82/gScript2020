@@ -2,13 +2,13 @@
 <h6>A personal scripting library to be better than gScript2019<h6>
 
 <h1>global functions</h1>
-<p><code>bySel(x)</code></p>
-<p><code>byId(x)</code></p>
-<p><code>byClass(x)</code></p>
-<p><code>bySelAll(x)</code></p>
-<p><code>deleteThis(x,y)</code></p>
-<p><code>makeFull(x)</code></p>
-<p><code>takeFull(x)</code></p>
+<p><code>bySel(x)</code> Call element by selector</p>
+<p><code>byId(x)</code> Call element by Id</p>
+<p><code>byClass(x)</code> Call element(s) by className</p>
+<p><code>bySelAll(x)</code> Call element's by all selectors</p>
+<p><code>deleteThis(x,y)</code> remove element with setTimeout <code>x = node</code><code>y = time</code></p>
+<p><code>makeFull(x)</code> Append '_full' to className</p>
+<p><code>takeFull(x)</code> Remove '_full' from className</p>
 <p><code>createEle(x)</code></p>
 <p><code>byTag(x, y)</code></p>
 <p><code>makeLock(x)</code></p>
