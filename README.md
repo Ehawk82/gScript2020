@@ -1,7 +1,7 @@
 # gScript2020
-A personal scripting library to be better than gScript2019.
+<h6>A personal scripting library to be better than gScript2019<h6>
 
-/*global functions*/
+<h1>global functions</h1>
 <p><code>bySel(x)</code></p>
 <p><code>byId(x)</code></p>
 <p><code>byClass(x)</code></p>
@@ -25,5 +25,6 @@ A personal scripting library to be better than gScript2019.
 <p><code>takeRight(x)</code></p>
 <p><code>makeFade(x)</code></p>
 <p><code>takeFade(x)</code></p>
-/*global variables*/
+
+<h1>global variables</h1>
 <p><code>ts</code></p>
