@@ -24,5 +24,6 @@ function makeFade(x) {return x.className = x.className + "_fade" };
 function takeFade(x) { var y,z; return y = x.className.split('_fade'), z = y[0], x.className = z };
 function tfs(x) { openFullscreen(body) };
 function openFullscreen() { return function() {if (document.body.requestFullscreen) {return document.body.requestFullscreen();} else if (document.body.mozRequestFullScreen) { /* Firefox */document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) { /* Chrome, Safari & Opera */document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) { /* IE/Edge */document.body.msRequestFullscreen();}}}
+function closeFullScreen() { return function(){if (document.exitFullscreen) {document.exitFullscreen();} else if (document.mozCancelFullScreen) { /* Firefox */document.mozCancelFullScreen();} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */document.webkitExitFullscreen();} else if (document.msExitFullscreen) { /* IE/Edge */document.msExitFullscreen();}}};
 /*global variables*/
 var ts = Math.round(new Date().getTime()/1000);

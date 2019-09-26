@@ -4,6 +4,10 @@ html,body {
 	padding:0;
 	overflow: hidden;
 }
+button {
+	width: 20px;
+	height: 20px;
+}
 .page {
 	position: fixed;
 	height: -webkit-fill-available;
