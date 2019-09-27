@@ -2,20 +2,15 @@ var myUI;
 
 myUI = {
 	init: function(){
-		var page = createEle("div"),
-		    h = myHeight(),
-		    w = myWidth(), cfsBtn = createEle("button");
-
-		cfsBtn.innerHTML = "x";
-		cfsBtn.onclick = closeFullScreen();
+		var page = createEle("div");
 
 		page.className = "page";
-		page.innerHTML = "demo page";
-		page.onclick = openFullscreen();
-		page.append(cfsBtn);
+		page.innerHTML = currentTime();
 		
 		body.append(page);
+		
 		setTimeout(function(){makeFull(page)},0);
+		runTimer(page);
 	}
 };
 
