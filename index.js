@@ -27,3 +27,4 @@ function openFullscreen() { return function() {if (document.body.requestFullscre
 function closeFullScreen() { return function(){if (document.exitFullscreen) {document.exitFullscreen();} else if (document.mozCancelFullScreen) { /* Firefox */document.mozCancelFullScreen();} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */document.webkitExitFullscreen();} else if (document.msExitFullscreen) { /* IE/Edge */document.msExitFullscreen();}}};
 function currentTime(){ return Math.round(new Date().getTime()/1000) };
 function runTimer(x){ return setTimeout(function(){ x.innerHTML = currentTime(); runTimer(x); },900) };
+function formValidate(){ return function(){alert("form validating")} };
