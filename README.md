@@ -30,7 +30,7 @@
 <p><code>currentTime()</code> get current timestamp </p>
 <p><code>runTimer(x)</code> update timestamp </p>
 <p><code>inputValidate(x,y)</code> /*incomplete*/ </p>
-
+<h1>session/local storage functions</h1>
 <p><code>saveLS(x, y)</code> local storage save </p>
 <p><code>loadLS(x)</code> local storage load </p>
 <p><code>parseLS(x)</code> local storage parse </p>
