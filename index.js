@@ -27,4 +27,20 @@ function openFullscreen() { return function() {if (document.body.requestFullscre
 function closeFullScreen() { return function(){if (document.exitFullscreen) {document.exitFullscreen();} else if (document.mozCancelFullScreen) { /* Firefox */document.mozCancelFullScreen();} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */document.webkitExitFullscreen();} else if (document.msExitFullscreen) { /* IE/Edge */document.msExitFullscreen();}}};
 function currentTime(){ return Math.round(new Date().getTime()/1000) };
 function runTimer(x){ return setTimeout(function(){ x.innerHTML = currentTime(); runTimer(x); },900) };
-function formValidate(){ return function(){alert("form validating")} };
+function inputValidate(x,y){ return function(){ var d = x.value.trim(); if (d.length === 0) { return false } else { x.value = ""; /*work in progress*/ } } };
+
+/* local storage */
+function saveLS(x, y) { return localStorage.setItem(x, JSON.stringify(y)) };
+function loadLS(x) { return localStorage.getItem(x) };
+function parseLS(x) { var y = loadLS(x), z = JSON.parse(y); return z };
+function clearLS() { return localStorage.clear() };
+function removeLSitem(x) { return localStorage.removeItem(x) };
+function LSinit(x,y) {var keyname = localStorage.getItem(x);if (!keyname || keyname === null) {localStorage.setItem(x, JSON.stringify(y));};};
+
+/* session storage */
+function saveSS(x, y) { return sessionStorage.setItem(x, JSON.stringify(y)) };
+function loadSS(x) { return sessionStorage.getItem(x) };
+function parseSS(x) { var y = loadSS(x), z = JSON.parse(y); return z };
+function clearSS() { return sessionStorage.clear() };
+function removeSSitem(x) { return sessionStorage.removeItem(x) };
+function SSinit(x,y) {var keyname = sessionStorage.getItem(x);if (!keyname || keyname === null) {sessionStorage.setItem(x, JSON.stringify(y));} else {var k = x.split("user_");var g = +k[1];g++;var i = x.split(k[1]);var z = i[0] + g;}};

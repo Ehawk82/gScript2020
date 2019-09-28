@@ -2,25 +2,14 @@ var myUI;
 
 myUI = {
 	init: function(){
-		var page = createEle("div"),
-		    form = createEle("form"),
-		    input = createEle("input"),
-		    button = createEle("button");
-
-		button.innerHTML = "enter";
-		button.onclick = formValidate(input);
-
-		input.type = "text";
-
-		form.append(input,button);
+		var page = createEle("div");
 
 		page.className = "page";
-		page.append(form);
+		page.innerHTML = "demo page";
 		
 		body.append(page);
 		
-		setTimeout(function(){makeFull(page)},0);
-
+		setTimeout(function(){makeFull(page)},333);
 	}
 };
 

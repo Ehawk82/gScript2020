@@ -29,3 +29,17 @@
 <p><code>closeFullscreen()</code> Exit fullscreen </p>
 <p><code>currentTime()</code> get current timestamp </p>
 <p><code>runTimer(x)</code> update timestamp </p>
+<p><code>inputValidate(x,y)</code> /*incomplete*/ </p>
+
+<p><code>saveLS(x, y)</code> local storage save </p>
+<p><code>loadLS(x)</code> local storage load </p>
+<p><code>parseLS(x)</code> local storage parse </p>
+<p><code>clearLS()</code> local storage clear </p>
+<p><code>removeLSitem(x)</code> local storage remove item </p>
+<p><code>LSinit(x,y)</code> local storage initilize </p>
+<p><code>saveSS(x, y)</code> session storage save </p>
+<p><code>loadSS(x)</code> session storage load </p>
+<p><code>parseSS(x)</code> session storage parse </p>
+<p><code>clearSS()</code> session storage clear </p>
+<p><code>removeSSitem(x)</code> session storage remove item </p>
+<p><code>SSinit(x,y)</code> session storage initilize </p>
