@@ -14,6 +14,7 @@ function myHeight() { return screen.height };
 function myWidth() { return screen.width };
 function thisHeight(x) { return x.clientHeight };
 function thisWidth(x) { return x.clientWidth };
+function makeCollide(x) { return x.className = x.className + "_collide" };
 function makeLeft(x) {return x.className = x.className + "_left" };
 function takeLeft(x) { var y,z; return y = x.className.split('_left'), z = y[0], x.className = z };
 function makeCenter(x) {return x.className = x.className + "_center" };
