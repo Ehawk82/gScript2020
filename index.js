@@ -61,7 +61,7 @@ function formatDateObject(x){
 		hour = date.getHours(),
 		minutes = date.getMinutes(),
 		seconds = date.getSeconds(),
-		formatedDate = days[weekDay]+" "+months[month]+" "+dys[day]+", "+year+" - "+hour+":"+minutes+":"+seconds; 
+		formatedDate = days[weekDay]+", "+months[month]+" "+dys[day]+", "+year+" - "+hour+":"+minutes+":"+seconds; 
 
 	return formatedDate;
 }
