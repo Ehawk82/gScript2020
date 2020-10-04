@@ -1,9 +1,3 @@
-/*global variables*/
-var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-var dys = ["0","1st","2nd","3rd","4th","5th","6th","7th","8th","9th","10th","11th","12th","13th","14th","15th","16th","17th","18th","19th","20th","21st","22nd","23rd","24th","25th","26th","27th","28th","29th","30th","31st"];
-
-/*global functions*/
 const bySel    = x => document.querySelector(x),
       byId     = x => document.getElementById(x),
       byClass  = x => document.getElementsByClassName(x),
@@ -62,21 +56,3 @@ function parseSS(x) { var y = loadSS(x), z = JSON.parse(y); return z };
 function clearSS() { return sessionStorage.clear() };
 function removeSSitem(x) { return sessionStorage.removeItem(x) };
 function SSinit(x,y) {var keyname = sessionStorage.getItem(x);if (!keyname || keyname === null) {sessionStorage.setItem(x, JSON.stringify(y));} else {var k = x.split("user_");var g = +k[1];g++;var i = x.split(k[1]);var z = i[0] + g;}};
-
-/*Date Formating*/
-function formatDateObject(x){
-	var date = new Date(x),
-		year = date.getFullYear(),
-		month = date.getMonth(),
-		day = date.getDate(),
-		weekDay = date.getDay(),
-		hours = date.getHours(),
-		minutes = date.getMinutes(),
-		seconds = date.getSeconds();
-		if (hours   < 10) {hours   = "0"+hours;}
-    	if (minutes < 10) {minutes = "0"+minutes;}
-    	if (seconds < 10) {seconds = "0"+seconds;}
-		var formatedDate = days[weekDay]+", "+months[month]+" "+dys[day]+", "+year+" - "+hours+":"+minutes+":"+seconds; 
-
-	return formatedDate;
-}
