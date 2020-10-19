@@ -10,13 +10,19 @@ const byTag = (x, y) => document.getElementsByTagName(x)[y || 0];
 
 const tfs = x => openFullscreen(body);
 
-const thisHeight = x =>  x.clientHeight;
+const thisHeight = x =>  x.clientHeight,
       thisWidth  = x =>  x.clientWidth;
 
-const myHeight = () => screen.height;
-      myWidth  = () => screen.width;
+const myHeight = function(){ 
+            var bodyHeight = Math.max( body.scrollHeight, body.offsetHeight );
+            return bodyHeight
+      };
+      myWidth  = function(){ 
+            var bodyWidth = Math.max( body.scrollWidth, body.offsetWidth );
+            return bodyWidth
+      };
 
-const make = (x, where) => make(x, where);
+const make = (x, where) => x.className = x.className + where;
 
 const makeCollide = x => make(x, '_collide'),
       makeLeft    = x => make(x, '_left'),
